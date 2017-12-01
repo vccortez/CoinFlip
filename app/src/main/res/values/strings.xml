@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Coin Flip</string>
+
+    <string name="flip">Flip the coin</string>
+    <string name="stop">Stop spinning</string>
+
+    <string name="heads">Heads</string>
+    <string name="tails">Tails</string>
+
+    <string name="zero_score">You haven\'t scored yet</string>
+    <string name="other_score">Your score is <b>%1$d</b></string>
+
+    <string name="initial_flip">Make a guess then flip the coin!</string>
+    <string name="latest_flip">The latest flip was <b>%1$s</b></string>
+</resources>
