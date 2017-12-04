@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
+import kotlinx.android.synthetic.main.game_view.view.*
 import java.security.SecureRandom
 
 @Suppress("UNUSED_PARAMETER")
@@ -21,12 +22,12 @@ class GameView : RelativeLayout, Animation.AnimationListener {
     val ACCELERATE_INTERPOLATOR = AccelerateInterpolator()
   }
 
-  private val coinImageView: ImageView by bind(R.id.coin_image)
-  private val playButton: Button by bind(R.id.play_button)
-  private val scoreLabel: TextView by bind(R.id.score_text)
-  private val latestFlipLabel: TextView by bind(R.id.latest_flip_text)
-  private val headsChoiceButton: Button by bind(R.id.heads_button)
-  private val tailsChoiceButton: Button by bind(R.id.tails_button)
+  private val coinImageView: ImageView by lazy { coin_image }
+  private val playButton: Button by lazy { play_button }
+  private val scoreLabel: TextView by lazy { score_text }
+  private val latestFlipLabel: TextView by lazy { latest_flip_text }
+  private val headsChoiceButton: Button by lazy { heads_button }
+  private val tailsChoiceButton: Button by lazy { tails_button }
 
   private val rand: SecureRandom = SecureRandom()
   private val anim: Animation = ScaleAnimation(1f, 0f, 1f, 1f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f)

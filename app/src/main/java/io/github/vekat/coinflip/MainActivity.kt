@@ -2,10 +2,11 @@ package io.github.vekat.coinflip
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-  val gameView: GameView by bind(R.id.game_view)
+  val gameView: GameView by lazy { game_view }
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
